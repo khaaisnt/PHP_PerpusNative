@@ -7,7 +7,7 @@ $dt_buku = mysqli_fetch_array($qry_detail_buku);
 <h2>Pinjam Buku</h2>
 <div class="row">
     <div class="col-md-4">
-        <img src="assets/foto_produk/<?= $dt_buku['foto'] ?>" class="card-img-top">
+        <img src="<?= $dt_buku['foto'] ?>" class="card-img-top">
     </div>
     <div class="col-md-8">
         <form action="masukkankeranjang.php?id_buku=<?= $dt_buku['id_buku'] ?>" method="post">
